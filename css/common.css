@@ -1,0 +1,304 @@
+@charset "UTF-8";
+
+body {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  word-break: normal;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+li {
+  list-style: none;
+}
+
+.header_all {
+  width: 100%;
+  background-color: white;
+}
+
+.inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header_nav ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+.header_nav ul li {
+  display: table-cell;
+}
+
+.header_nav ul li a {
+  display: block;
+  margin: 25px;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.header_nav ul li a:hover {
+  color: #aeadc8;
+  border-bottom: solid 2px #aeadc8;
+}
+
+.header_nav ul li a span {
+  display: block;
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+.top_all {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  background: url("../ng/top.jpg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.top_all::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+.top_inner {
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.top_inner h1 {
+  font-size: 60px;
+  font-weight: 500;
+  color: #ddd;
+  letter-spacing: 5px;
+}
+
+.top_inner p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ddd;
+  letter-spacing: 5px;
+}
+
+.section {
+  padding: 150px 0;
+  border-top: solid 3px #81779d;
+}
+
+.section:nth-of-type(odd) {
+  background-color: #d3d3d3;
+}
+
+.concept_img {
+  position: relative;
+}
+
+.concept_img::after {
+  content: "";
+  position: absolute;
+  background: url("../ng/concept.jpg") no-repeat center;
+  background-size: cover;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+}
+
+.message_img {
+  position: relative;
+}
+
+.message_img::after {
+  content: "";
+  position: absolute;
+  background: url("../ng/message.jpg") no-repeat center;
+  background-size: cover;
+  top: 0px;
+  right: 50%;
+  width: 50%;
+  height: 100%;
+}
+
+.descript {
+  width: 40%;
+  height: 50%;
+}
+
+.descript_right {
+  margin-left: 60%;
+}
+
+.title {
+  display: block;
+  width: 100%;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  line-height: 1.4;
+  font-size: 40px;
+  font-weight: 600;
+  color: #555;
+  border-left: solid 4px #81779d;
+}
+
+.title span {
+  display: block;
+  font-size: 20px;
+}
+
+.txt h3 {
+  font-size: 30px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.txt p {
+  color: #555;
+}
+
+.frame {
+  width: 50%;
+  height: 100%;
+  background-color: #d3d3d3;
+  border-radius: 5px;
+  margin: 30px;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.txt_price {
+  text-align: center;
+  position: relative;
+}
+
+.txt_price::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  z-index: 1;
+  background-color: #555;
+  width: 30%;
+  height: 1px;
+  margin-top: -1px;
+}
+
+.txt_price::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  z-index: 1;
+  background-color: #555;
+  width: 30%;
+  height: 1px;
+  margin-top: -1px;
+}
+
+.menu_price {
+  display: table;
+  margin: 0 auto;
+}
+.menu_left {
+  display: table-cell;
+  padding-right: 150px;
+}
+
+.frame_staff {
+  display: inline-table;
+  width: 35%;
+  height: 100%;
+  background-color: #eee;
+  border-radius: 5px;
+  margin: 30px;
+  padding: 40px;
+}
+.staff_bg {
+  background-color: #fff;
+  height: 460px;
+}
+
+.intro_img {
+  text-align: center;
+}
+
+.txt h3 span {
+  font-size: 20px;
+}
+
+.blog_block {
+  display: inline-table;
+  margin: 5px;
+}
+
+.blog_body {
+  margin-top: 10px;
+}
+
+.blog_body h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #555;
+  margin-top: 10px;
+}
+
+.blog_body p {
+  font-size: 14px;
+  color: #555;
+}
+
+.button {
+  text-align: center;
+  padding: 15px;
+  background-color: #81779d;
+  border-radius: 10px;
+  width: 25%;
+  margin: 0 auto 150px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #21173d;
+}
+
+.button a {
+  font-size: 18px;
+  color: #fff;
+}
+
+.bottom {
+  background-color: #555;
+  padding: 30px 0;
+  text-align: center;
+  color: #eee;
+}
+
+.name h4 a {
+  font-size: 30px;
+  color: #eee;
+}
+
+.footer_logo img {
+  width: 50px;
+  margin-top: 10px;
+}
